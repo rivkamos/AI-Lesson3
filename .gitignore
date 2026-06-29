@@ -1,0 +1,38 @@
+# קבצי פייתון קומפילציה
+__pycache__/
+*.py[cod]
+*.pyo
+
+# סביבות וירטואליות
+venv/
+env/
+.venv/
+
+# קבצי IDE
+.vscode/
+.idea/
+
+# קבצי מערכת
+.DS_Store
+Thumbs.db
+
+# לוגים
+*.log
+
+# קבצי בדיקות וכיסוי
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# קבצי build והתקנה
+build/
+dist/
+*.egg-info/
+
+# משתני סביבה
+.env
+.env.*
+!.env.example

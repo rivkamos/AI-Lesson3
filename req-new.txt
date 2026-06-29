@@ -1,0 +1,19 @@
+pip install llama-index
+pip install chromadb
+pip install google-generativeai
+pip install llama-index-llms-google-genai
+pip install llama-index-embeddings-google-genai
+pip install llama-index-vector-stores-chroma
+
+pip install pypdf
+pip install python-docx
+
+pip install fastapi
+pip install uvicorn
+pip install python-multipart
+
+הרצת פרויקט
+uvicorn main:app --reload
+
+שמירת קוד תחברות למודל של גמיני
+set GEMINI_API_KEY=your_key
