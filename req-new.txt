@@ -4,6 +4,7 @@ pip install google-generativeai
 pip install llama-index-llms-google-genai
 pip install llama-index-embeddings-google-genai
 pip install llama-index-vector-stores-chroma
+pip install llama-index-retrievers-bm25
 
 pip install pypdf
 pip install python-docx

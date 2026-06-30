@@ -36,3 +36,6 @@ dist/
 .env
 .env.*
 !.env.example
+
+chroma/
+uploads/
