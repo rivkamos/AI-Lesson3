@@ -1,0 +1,14 @@
+ <h2>תשלומים</h2>
+
+    <div class="stats">
+      <div>סה״כ לחודש: ₪18,420</div>
+      <div>שולמו: 96%</div>
+    </div>
+
+    <table>
+      <tr *ngFor="let p of payments">
+        <td>{{ p.name }}</td>
+        <td>{{ p.amount }}</td>
+        <td>{{ p.status }}</td>
+      </tr>
+    </table>

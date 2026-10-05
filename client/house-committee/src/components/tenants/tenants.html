@@ -1,0 +1,12 @@
+ <h2>דיירים</h2>
+
+    <div class="table">
+        <div class="row">
+        @for(t of tenants; track $index) {
+
+            <span>{{ t.name }}</span>
+            <span>{{ t.apartment }}</span>
+            <span>{{ t.phone }}</span>
+        }
+      </div>
+    </div>

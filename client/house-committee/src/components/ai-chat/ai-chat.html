@@ -1,0 +1,74 @@
+<div class="chat-container">
+
+  <div class="chat-header">
+
+    <mat-icon>smart_toy</mat-icon>
+
+    <div>
+      <h2>VAAD AI Assistant</h2>
+      <span>RAG Connected</span>
+    </div>
+
+  </div>
+
+  <div #messagesContainer class="messages">
+
+   @for (message of messages(); track $index) {
+
+  <div class="message"
+       [class.user]="message.role === 'user'"
+       [class.assistant]="message.role === 'assistant'">
+
+    <div class="message-content">
+      {{ message.content }}
+    </div>
+
+    @if (message.sources?.length) {
+
+      <div class="sources">
+
+        <div class="sources-title">
+          מקורות:
+        </div>
+
+        @for (source of message.sources; track source.source) {
+          <div class="source-item">
+            {{ source.source }}
+          </div>
+        }
+
+      </div>
+
+    }
+
+  </div>
+
+}
+
+  </div>
+
+  @if(loading()) {
+
+  <div class="loading">
+
+    <mat-spinner diameter="30">
+    </mat-spinner>
+
+  </div>
+
+  }
+
+  <div class="input-section">
+
+    <input type="text" placeholder="שאלי שאלה..." [ngModel]="question()" (ngModelChange)="question.set($event)"
+      (keyup.enter)="send()">
+
+    <button type="button" (click)="send()">
+
+      שלח
+
+    </button>
+
+  </div>
+
+</div>

@@ -1,0 +1,10 @@
+   <h2>ניהול בניינים</h2>
+
+    <button (click)="addBuilding()">+ הוסף בניין</button>
+
+    <div class="grid">
+      <div class="card" *ngFor="let b of buildings">
+        <h3>{{ b.name }}</h3>
+        <p>{{ b.address }}</p>
+      </div>
+    </div>
